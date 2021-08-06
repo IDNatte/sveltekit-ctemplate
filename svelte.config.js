@@ -27,7 +27,6 @@ const config = {
 		*
 		*/
 
-		// node adapter
 		adapter: adapter({
 			out: 'build',
 			precompress: false,
