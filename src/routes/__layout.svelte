@@ -1,15 +1,19 @@
 <script>
-  import { onMount } from 'svelte'
-
-  onMount(() => {
-    console.log('loading')
-  })
+  import Navbar from '../components/Navbar.svelte'
+  import Footer from '../components/Footer.svelte'
 </script>
 
-<slot />
+<Navbar />
+
+<main class="p-6 pt-32 relative">
+  <slot />
+</main>
+
+<Footer />
 
 <style>
   @tailwind base;
   @tailwind components;
   @tailwind utilities;
+
 </style>
