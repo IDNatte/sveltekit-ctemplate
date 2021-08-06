@@ -1,7 +1,7 @@
 /** @type {import('@sveltejs/kit').Config} */
 
-// import adapter from '@sveltejs/adapter-node'
-import adapter from '@sveltejs/adapter-static'
+import adapter from '@sveltejs/adapter-node'
+// import adapter from '@sveltejs/adapter-static'
 
 const config = {
 	kit: {
@@ -27,12 +27,12 @@ const config = {
 		*
 		*/
 
-		// node adapter
-		// adapter: adapter({
-		// 	out: 'build',
-		// 	precompress: false,
-		// 	env: {}
-		// })
+		node adapter
+		adapter: adapter({
+			out: 'build',
+			precompress: false,
+			env: {}
+		})
 
 		// 
 		/*
@@ -47,14 +47,14 @@ const config = {
 		*
 		*/
 		
-		adapter: adapter({
-			// fallback file can be changed as what you prefered, by default it will be index.html.
-			fallback: 'index.html',
+		// adapter: adapter({
+		// 	// fallback file can be changed as what you prefered, by default it will be index.html.
+		// 	fallback: 'index.html',
 			
-			// you can change pages and assets folder to anywhere you prefered, in this case will be in /build/
-			pages: 'build',
-			assets: 'build'
-		})
+		// 	// you can change pages and assets folder to anywhere you prefered, in this case will be in /build/
+		// 	pages: 'build',
+		// 	assets: 'build'
+		// })
 	}
 };
 
